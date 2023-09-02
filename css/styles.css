@@ -1,0 +1,149 @@
+:root {
+  --logo-sm: 6.4rem;
+  --logo-lg: 12.8rem;
+  --bg-brown: #2a2626;
+  --bg-black: #0b0a0a;
+  --about-bg-color: #8e8b8b;
+  --footer-bg-color: #2a2626;
+}
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: var(--logo-sm);
+  font-family: "Miltonian Tattoo", cursive;
+  color: white;
+}
+.header-container {
+  background-image: url("../assets/images/bg-480.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 696px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container header {
+  margin: 4rem 3rem 0 3rem;
+}
+
+nav {
+  display: none;
+}
+.header-container .content-container p {
+  color: #c0b4b4;
+  text-align: center;
+  max-width: 420px;
+  font-size: 2.4rem;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+nav a {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+}
+.content-container p {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+}
+.desc p {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+}
+.section-title {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+}
+
+/* articles */
+.articles {
+  background-color: var(--bg-brown);
+  padding: 4.8rem 3rem;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  font-size: 3.6rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3.2rem;
+}
+.articles .middle {
+  margin: 2.4rem 0;
+}
+
+/* about */
+.about {
+  background-color: var(--bg-black);
+  padding: 4.8rem 3rem;
+}
+.about .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .content-container .desc {
+  background-color: var(--about-bg-color);
+  width: 420px;
+
+  margin-top: 3rem;
+}
+.about .desc p {
+  font-size: 1.6rem;
+  color: white;
+  text-align: justify;
+  padding: 64px 60px 116px 60px;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+.footer-container ul {
+  display: flex;
+}
+
+.footer-container .middle {
+  margin: 0 3rem;
+}
+
+.footer-container .footer-logo {
+  display: none;
+}
